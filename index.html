@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        #count1 {
+            color: white;
+            z-index: 1;
+            font-size: 18px;
+            position: fixed;
+            top: 70px;
+            right: 30px;
+            border-radius: 40px;
+            background: #000;
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+        }
+
+        #count2 {
+            color: black;
+            z-index: 2;
+            font-size: 18px;
+            position: fixed;
+            top: 170px;
+            right: 30px;
+            border-radius: 40px;
+            background: pink;
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .image {
+            flex: 0 0 auto;
+            margin-right: 20px;
+            position: relative;
+            width: 30%;
+        }
+
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: top;
+            justify-content: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .img_txt {
+            margin-top: 40%;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        .circle {
+            position: absolute;
+            top: 30%;
+            left: 40%;
+            right: 0;
+            bottom: 0;
+            width: 120px;
+            height: 120px;
+            display: block;
+
+        }
+
+        .circle img {
+            width: 80%;
+            margin: 3% 0% 0% 11%;
+            display:block;
+        }
+
+        .sub_txt {
+            position: absolute;
+            top: 42%;
+            left: 47%;
+            right: 0;
+            color: white;
+            font-size: 1.2rem;
+
+        }
+
+        .text {
+            flex: 1 1 auto;
+            position: relative;
+            padding-left: 80px;
+        }
+
+        .all {
+            margin-top: 3%;
+        }
+
+
+        ul {
+            list-style-type: none;
+            display: row;
+            line-height: 70px;
+        }
+
+        .list1,
+        .list2,
+        .list3,
+        .list4 {
+            line-height: 28px;
+            font-size: 15px;
+        }
+
+        hr {
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="image/image.jpeg">
+            <div class="overlay">
+                <p class="img_txt">Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="circle"><img src="image/image2.png"></div>
+            <p class="sub_txt">ju1eee</p>
+        </div>
+        <div class="text">
+            <p class="all">전체글</p>
+            <hr>
+            <ul>
+                <li>
+                    <h2>종강하고 싶어요</h2>
+                    <p class="list1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nulla possimus saepe
+                        nemo,
+                        necessitatibus a,<br> ex quia
+                        quis maxime tempore sit dolores voluptate exercitationem doloremque assumenda non cum rem.<br>
+                        Ducimus sequi
+                        alias,repellendus quidem velit sunt dolorum? Reiciendis nihil consectetur libero?<br> Neque nisi
+                        voluptates
+                        necessitatibusharum possimus hic quaerat dolorum sunt reprehenderit. Rem eveniet error ab,<br>
+                        rerum quo
+                        dolores deleniti
+                        obcaecatiquis inventore maiores distinctio provident?</p>
+                </li>
+                <li>
+                    <hr>
+                    <h2>집에 있는데 집에 가고싶다.</h2>
+                    <p class="list2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nulla possimus saepe
+                        nemo,
+                        necessitatibus a,<br> ex quia
+                        quis maxime tempore sit dolores voluptate exercitationem doloremque assumenda non cum rem.<br>
+                        Ducimus sequi
+                        alias,repellendus quidem velit sunt dolorum? Reiciendis nihil consectetur libero?<br> Neque nisi
+                        voluptates
+                        necessitatibusharum possimus hic quaerat dolorum sunt reprehenderit. Rem eveniet error ab,<br>
+                        rerum quo
+                        dolores deleniti
+                        obcaecatiquis inventore maiores distinctio provident?</p>
+                </li>
+                <li>
+                    <hr>
+                    <h2>알잘딱깔센하게 과제합시당</h2>
+                    <p class="list3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nulla possimus saepe
+                        nemo,
+                        necessitatibus a,<br> ex quia
+                        quis maxime tempore sit dolores voluptate exercitationem doloremque assumenda non cum rem.<br>
+                        Ducimus sequi
+                        alias,repellendus quidem velit sunt dolorum? Reiciendis nihil consectetur libero?<br> Neque nisi
+                        voluptates
+                        necessitatibusharum possimus hic quaerat dolorum sunt reprehenderit. Rem eveniet error ab,<br>
+                        rerum quo
+                        dolores deleniti
+                        obcaecatiquis inventore maiores distinctio provident?</p>
+                </li>
+                <li>
+                    <hr>
+                    <h2>졸업하고 싶어요</h2>
+                    <p class="list4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nulla possimus saepe
+                        nemo,
+                        necessitatibus a,<br> ex quia
+                        quis maxime tempore sit dolores voluptate exercitationem doloremque assumenda non cum rem.<br>
+                        Ducimus sequi
+                        alias,repellendus quidem velit sunt dolorum? Reiciendis nihil consectetur libero?<br> Neque nisi
+                        voluptates
+                        necessitatibusharum possimus hic quaerat dolorum sunt reprehenderit. Rem eveniet error ab,</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // 예시: 현재 날짜와 2023년 5월 31일 사이의 시간 차이 계산
+        const now = new Date();
+        const futureDate = new Date('2023-10-29');
+        let timeDiff = futureDate.getTime() - now.getTime();
+        // 시간 차이를 일 단위로 변환
+        let daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24));
+
+        // 새로운 div 요소 만들기
+        var newDiv1 = document.createElement("div");
+        var newDiv2 = document.createElement("div");
+        // div에 텍스트 추가하기
+        newDiv1.id = "count1";
+        newDiv2.id = "count2";
+        var divText1 = document.createTextNode("D+" + (365 - daysDiff));
+        var divText2 = document.createTextNode("D-" + (daysDiff));
+        newDiv1.appendChild(divText1);
+        newDiv2.appendChild(divText2);
+        // body 요소에 새로운 div 추가하기
+        document.body.appendChild(newDiv1);
+        document.body.appendChild(newDiv2);
+    </script>
+</body>
+
+</html>
